@@ -1,0 +1,20 @@
+<div *ngIf="user" class="jumbotron bg-white py-3 px-3">
+    <div class="col">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="../../../assets/user_portrait.png" [src]="user.image" class="rounded-circle" width="90px" height="90px" alt="">
+            </div>
+        </div>
+        <div class="row" class="text-center">
+            <div class="col-md-12 my-2 text-primary">
+            <h2>{{user.name}}</h2>
+            <h5>{{user.description}}</h5>
+            <br>
+            <p class="w-75 mx-auto text-secondary">{{user.detail}}</p>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+</div>

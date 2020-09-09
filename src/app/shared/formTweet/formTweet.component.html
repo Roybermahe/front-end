@@ -1,0 +1,19 @@
+<div class="jumbotron bg-white py-3 px-5">
+    <div class="row">
+        <div class="col-md-1">
+            <div class="text-center mt-2">
+                <img src="https://image.freepik.com/foto-gratis/cierrese-encima-retrato-cara-joven-hombre-barbudo_171337-2887.jpg" height="50px" width="50px" class="rounded-circle image-user"
+                    alt="">
+            </div>
+        </div>
+        <div class="col-md-11">
+            <form (ngSubmit)="form.form.valid && onSubmit()" #form="ngForm">
+                <div class="form-group">
+                    <textarea name="text-tweet" class="form-control my-2" [(ngModel)]="text" id="text-tweet" cols="30" rows="3"
+                        placeholder="Hi, what's new ? Public something new"></textarea>
+                    <button class="btn btn-primary float-right" type="submit">Publicar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

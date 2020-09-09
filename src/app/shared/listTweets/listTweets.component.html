@@ -1,0 +1,21 @@
+<div class="jumbotron bg-white py-3 px-5" *ngIf="tweet">
+    <div class="row">
+        <div class="col-md-1">
+            <div class="text-center mt-2">
+                <img src="{{tweet.data.user.image}}" height="50px" width="50px" class="rounded-circle image-user"
+                alt="">
+            </div>
+        </div>
+        <div class="col-md-11 my-auto text-primary">
+            <h5 class="py-0 my-0">{{tweet.data.user.name}}</h5>
+            <h6 class="py-0 my-0">{{tweet.data.user.description}}</h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-justify ">
+            <p class="h6 my-3 text-secondary">
+                {{tweet.data.text}}
+            </p>
+        </div>
+    </div>
+</div>

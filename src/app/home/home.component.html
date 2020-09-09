@@ -1,0 +1,6 @@
+<div class="container py-5 mt-2">
+    <a class="h5 text-primary" [routerLink]="['/user/']" routerLinkActive="router-link-active"  >My Account</a>
+    <formTweet></formTweet>
+    <br>
+    <listTweets *ngFor="let item of listTweet" [tweet]="item"></listTweets>
+</div>
